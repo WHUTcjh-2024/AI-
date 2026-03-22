@@ -3,12 +3,12 @@ import os
 #基础路径配置，可以获取config.py的绝对路径和根目录，动态拼接
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_PATH = os.path.join(BASE_DIR, "models", "best.pt")
-DATA_YAML_PATH = os.path.join(BASE_DIR, "data", "data.yaml")
+DATA_YAML_PATH = os.path.join(BASE_DIR, "data.yaml")
 OUTPUT_DIR = os.path.join(BASE_DIR, "output")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 FORCE_DEVICE = "cpu"
-INFER_WORKERS = 4
+INFER_WORKERS = 2
 
 #和模型训练时的data.yaml必须对齐！！！！！！！！！
 CLASS_DICT = {

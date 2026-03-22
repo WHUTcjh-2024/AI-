@@ -1,0 +1,5 @@
+train: D:/Desktop/AI_PROJECT/data/images/train
+val: D:/Desktop/AI_PROJECT/data/images/val
+nc: 3
+names: ['CentralFringe', 'FirstFringe', 'Ruler']
+
